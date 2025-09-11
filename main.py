@@ -8,8 +8,8 @@ def run_game():
 
 
     #Setup
-    guessed: str = ''
-    tries: int = 3
+    guessed: str = '' # keep track of what letters were guessed
+    tries: int = 3 #how many incorrect guesses are allowed 
 
     while tries > 0:
         blanks: int = 0
