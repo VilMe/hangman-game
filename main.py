@@ -1,7 +1,7 @@
 from random import choice
 
 def run_game():
-    word: str = choice(['apple', 'secret', 'banana'])
+    word: str = choice(['apple', 'secret', 'banana', 'Goose', 'lovingly', 'manageable'])
 
     username: str = input('What is your name? >>')
     print(f'Welcome to hangman, {username}')
