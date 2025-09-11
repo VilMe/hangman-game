@@ -11,4 +11,8 @@ def run_game():
     guessed: str = ''
     tries: int = 3
 
-    while tries 
+    while tries > 0:
+        blanks: int = 0
+
+        print('Word', end='')
+        for char in word:
