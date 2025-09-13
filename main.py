@@ -19,5 +19,8 @@ def run_game():
             if char in word:
                 print(char, end='')
             else:
-                print('_')
+                print('_', end='')
+                blanks+=1
+    
+    print() #adds a blank line
             
