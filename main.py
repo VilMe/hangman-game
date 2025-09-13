@@ -16,3 +16,8 @@ def run_game():
 
         print('Word', end='')
         for char in word:
+            if char in word:
+                print(char, end='')
+            else:
+                print('_')
+            
