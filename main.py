@@ -14,9 +14,9 @@ def run_game():
     while tries > 0:
         blanks: int = 0
 
-        print('Word', end='')
+        print('Word ', end='')
         for char in word:
-            if char in word:
+            if char in guessed:
                 print(char, end='')
             else:
                 print('_', end='')
