@@ -24,12 +24,20 @@ def run_game():
     
         print() # adds a blank line
 
+        guess: str = input('Enter a letter: ')
 
-        if blanks == 0:
+
+        if blanks == 0 or guess == word:
             print('You got it!')
             break
         
-        guess: str = input('Enter a letter: ')
+
+
+        # if guess == word:
+        #     blanks = 0 
+        #     print('made into guesssed conditional')
+        #     print('You got it!')
+        #     return blanks
 
         if len(guess) > 1:
             print("Please enter a single letter to continue")
