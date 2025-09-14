@@ -31,6 +31,10 @@ def run_game():
         
         guess: str = input('Enter a letter: ')
 
+        if len(guess) > 1:
+            print("Please enter a single letter to continue")
+            continue
+
         if guess in guessed:
             print(f'You already used: "{guess}". Please try another letter!')
             continue
